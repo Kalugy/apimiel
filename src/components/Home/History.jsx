@@ -3,8 +3,8 @@ import React from "react";
 const HistoryObjectives = () => {
   return (
     <section className="relative bg-[#F9F9F9] py-24 px-6 lg:px-32 text-[#2B2829]" id="history-objectives">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        {/* Left Side Content */}
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse gap-16 items-center">
+        {/* Left Side Content (on PC, this will appear on the right) */}
         <div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#E98B07] relative inline-block">
             Historia y Objetivos
@@ -13,7 +13,7 @@ const HistoryObjectives = () => {
 
           <h3 className="text-2xl font-semibold text-[#E98B07] mb-4">Historia</h3>
           <p className="mb-6 text-lg leading-relaxed text-gray-700">
-            <span className="font-semibold text-[#E52C35]">Apícola Oro Dulce</span> nace como un emprendimiento familiar en la comuna de Alhué, inspirado en el amor por las abejas y la necesidad de generar un sustento digno y sostenible desde el campo chileno. Con esfuerzo y dedicación, fuimos aprendiendo el oficio apícola, desarrollando productos nobles y generando conciencia sobre la importancia de la polinización y el consumo local.
+            <span className="font-semibold text-[#E98B07]">Apícola Oro Dulce</span> nace como un emprendimiento familiar en la comuna de Alhué, inspirado en el amor por las abejas y la necesidad de generar un sustento digno y sostenible desde el campo chileno. Con esfuerzo y dedicación, fuimos aprendiendo el oficio apícola, desarrollando productos nobles y generando conciencia sobre la importancia de la polinización y el consumo local.
           </p>
 
           <h3 className="text-2xl font-semibold text-[#E98B07] mb-4">Objetivos</h3>
@@ -25,15 +25,16 @@ const HistoryObjectives = () => {
           </ul>
         </div>
 
-        {/* Right Side Image */}
+        {/* Right Side Image with Hexagonal Shape (on PC, this will appear on the left) */}
         <div className="relative flex justify-center items-center">
-          <div className="w-full h-[400px] lg:w-[500px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl border-4 border-[#E98B07] relative transform hover:scale-105 transition-transform duration-300">
-            <img
-              src="/images/Millary62.webp"
-              alt="Historia Apícola"
-              className="object-cover w-full h-full rounded-xl"
-            />
-            <div className="absolute top-6 left-6 w-24 h-24 bg-[#E52C35] rounded-full opacity-30 animate-pulse"></div>
+          <div className="w-full h-[400px] lg:w-[500px] lg:h-[400px] overflow-hidden shadow-2xl border-4 border-[#E98B07] relative transform hover:scale-105 transition-transform duration-300">
+            <div className="hexagon w-full h-full relative">
+              <img
+                src="/images/mielcup.webp" // Replace with your bee honeycomb image
+                alt="Historia Apícola"
+                className="object-cover w-full h-full rounded-xl"
+              />
+            </div>
           </div>
 
           {/* Decorative Shape */}
@@ -42,7 +43,7 @@ const HistoryObjectives = () => {
       </div>
 
       {/* Added Design: Separator */}
-      {/*<div className="absolute bottom-[-50px] left-0 w-full h-24 bg-gradient-to-r from-[#E52C35] to-[#E98B07] rounded-b-3xl opacity-50"></div>*/}
+      {/* <div className="absolute bottom-[-50px] left-0 w-full h-24 bg-gradient-to-r from-[#E52C35] to-[#E98B07] rounded-b-3xl opacity-50"></div> */}
     </section>
   );
 };

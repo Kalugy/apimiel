@@ -26,11 +26,10 @@ const VisionMission = () => {
         <div className="relative flex justify-center items-center">
           <div className="w-full h-[400px] lg:w-[500px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl border-4 border-[#E98B07] relative transform hover:scale-105 transition-transform duration-300">
             <img
-              src="/images/Millary62.webp"
+              src="/images/mielPuesto.jpeg"
               alt="Trabajo Apícola"
               className="object-cover w-full h-full rounded-xl"
             />
-            <div className="absolute top-6 left-6 w-24 h-24 bg-[#E52C35] rounded-full opacity-30 animate-pulse"></div>
           </div>
 
           {/* Decorative Shape */}

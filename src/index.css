@@ -78,15 +78,17 @@ button.secondary {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #E52C35 !important; /* red */
+  color: #E98B07 !important; /* red */
 }
 
 .swiper-pagination-bullet {
-  background: #E52C35 !important; /* orange */
+  background: #E98B07 !important; /* orange */
   opacity: 0.5;
 }
 
 .swiper-pagination-bullet-active {
-  background: #E52C35 !important; /* red */
+  background: #E98B07 !important; /* red */
   opacity: 1;
 }
+
+

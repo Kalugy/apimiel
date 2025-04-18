@@ -5,7 +5,7 @@ import FAQs from "../components/FAQ/FAQ";
 //import Section from '../components/Section';
 import About from '../components/Home/About';
 import Contact from '../components/Home/Contact';
-import Team from '../components/Home/Team';
+import ProductSection from '../components/Home/ProductSection';
 import CallToActionSection from '../components/Home/CallToActionSection';
 import Description from '../components/Home/Description';
 import History from '../components/Home/History';
@@ -20,9 +20,10 @@ function HomeScreen() {
         <About />
         <History />
         <Description />
-        <Contact />
+        <ProductSection />
+        {/*<Contact />*/}
         
-        {/*<Team />
+        {/*<ProductSection />
         <Services />
         <PlatesCarousel />
         <CallToActionSection />
