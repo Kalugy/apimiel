@@ -21,12 +21,13 @@ function HomeScreen() {
         <History />
         <Description />
         <ProductSection />
+        
+        <CallToActionSection />
         {/*<Contact />*/}
         
         {/*<ProductSection />
         <Services />
         <PlatesCarousel />
-        <CallToActionSection />
         */}
       </div>
   )
