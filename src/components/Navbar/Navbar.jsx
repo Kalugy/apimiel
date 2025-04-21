@@ -29,7 +29,7 @@ const Navbar = () => {
         {/* Logo */}
         <NavLink className="cursor-pointer" to="/" >
           <div className="flex ml-9 align-middle items-center">
-            <img src="/images/logo.jpeg" alt="Logo" className="h-12 " />
+            <img src="/images/logo.png" alt="Logo" className="h-12 " />
             <h1 className={`text-2xl italic font-bold ml-2 `}>
               Apícola Oro Dulce
             </h1>
@@ -120,7 +120,7 @@ const BackgroundCircle = () => {
     <div
       className="absolute top-5 left-5 w-12 h-12 bg-cover bg-center"
       style={{
-        backgroundImage: "url('/images/logo.jpeg')", // Replace with your image path
+        backgroundImage: "url('/images/logo.png')", // Replace with your image path
       }}
     ></div>
   );

@@ -17,7 +17,7 @@ export default function Layout() {
       </div>
 
       {/* Footer at the bottom */}
-      {/*<Footer />*/}
+      <Footer />
     </div>
   );
 }

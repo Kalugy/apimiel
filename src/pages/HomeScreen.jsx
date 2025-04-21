@@ -9,6 +9,8 @@ import ProductSection from '../components/Home/ProductSection';
 import CallToActionSection from '../components/Home/CallToActionSection';
 import Description from '../components/Home/Description';
 import History from '../components/Home/History';
+import TerritorySection from '../components/Home/TerritorySection';
+import BlogSection from '../components/Home/BlogSection';
 
 
 
@@ -23,7 +25,11 @@ function HomeScreen() {
         <ProductSection />
         
         <CallToActionSection />
-        {/*<Contact />*/}
+
+        <TerritorySection />
+        
+        <BlogSection />
+        <Contact />
         
         {/*<ProductSection />
         <Services />

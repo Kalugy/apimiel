@@ -44,14 +44,14 @@ const ProductSection = () => {
   return (
     <section
       id="productos"
-      className="bg-white py-24 px-6 lg:px-32 relative z-10"
+      className="bg-[#F9F9F9] py-24 px-6 lg:px-32 relative z-10"
       style={{ scrollMarginTop: "100px" }}
     >
-      <h2 className="text-3xl font-bold text-center text-[#2B2829] mb-6">
+      <h2 className="text-3xl font-bold text-center text-[#25793A] mb-6">
         Nuestros Productos
       </h2>
 
-      <p className="text-center max-w-3xl mx-auto text-[#2B2829] mb-12 text-lg">
+      <p className="text-center max-w-3xl mx-auto text-[#25793A] mb-12 text-lg">
         Ofrecemos una variedad de productos naturales, recolectados y procesados
         de manera responsable, para llevar lo mejor de la naturaleza directamente
         a tu mesa.
@@ -71,9 +71,9 @@ const ProductSection = () => {
       >
         {products.map((product) => (
           <SwiperSlide key={product.name}>
-            <div className="rounded-3xl shadow-xl border border-[#E98B07]/20 p-8 m-8 text-center h-full hover:shadow-2xl transition duration-300 flex flex-col items-center">
+            <div className="rounded-3xl shadow-xl border border-[#FAC80C]/20 p-8 m-8 text-center h-full hover:shadow-2xl transition duration-300 flex flex-col items-center">
               {/* Image */}
-              <div className="w-full h-[250px] md:h-[350px] mb-4 rounded-xl overflow-hidden border-4 border-[#E98B07] bg-white shadow-md">
+              <div className="w-full h-[250px] md:h-[350px] mb-4 rounded-xl overflow-hidden border-4 border-[#FAC80C] bg-white shadow-md">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -82,15 +82,15 @@ const ProductSection = () => {
               </div>
 
               {/* Product Details */}
-              <h3 className="text-xl font-bold text-[#2B2829] mb-1">{product.name}</h3>
-              <p className="text-[#E98B07] font-medium mb-2">{product.presentation}</p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-4">{product.description}</p>
-              <p className="text-gray-700 font-semibold mb-4">{product.price}</p>
+              <h3 className="text-xl font-bold text-[#0F0C0B] mb-1">{product.name}</h3> {/* Dark Brown for product title */}
+              <p className="text-[#FAC80C] font-medium mb-2">{product.presentation}</p> {/* Honey color for presentation */}
+              <p className="text-[#53270D] text-sm leading-relaxed mb-4">{product.description}</p> {/* Rich Brown for description */}
+              <p className="text-[#53270D] font-semibold mb-4">{product.price}</p> {/* Rich Brown for price */}
 
               {/* Buy Button */}
-              <button className="bg-[#E98B07] hover:bg-[#E98B07] text-white px-6 py-3 rounded-full font-semibold shadow-md transition duration-300">
+              <button className="bg-[#FAC80C] hover:bg-[#B88335] text-[#0F0C0B] px-6 py-3 rounded-full font-semibold shadow-md transition duration-300">
                 Comprar Ahora
-              </button>
+              </button> {/* Honey color button with hover effect */}
             </div>
           </SwiperSlide>
         ))}
