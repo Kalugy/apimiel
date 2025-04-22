@@ -1,51 +1,43 @@
 import React from "react";
 
-const AboutUs = () => {
+const AboutSection = () => {
   return (
-    <section
-      className="relative bg-[#F9F9F9] py-24 px-6 lg:px-32 text-[#0F0C0B]" // Dark Brown/Black text color
-      id="about"
-    >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        {/* Text Content */}
-        <div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#FAC80C] relative inline-block"> {/* Honey Color for title */}
-            ¿Quiénes Somos?
-            <span className="absolute left-0 -bottom-2 w-16 h-1 bg-[#FAC80C] rounded-full"></span> {/* Honey color underline */}
+    <section className="relative bg-[#FFF1EC] py-20 px-6 lg:px-20 overflow-hidden">
+      {/* Background design element */}
+      <div className="absolute top-0 right-0 w-48 h-48 bg-yellow-200 rounded-full opacity-30 blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#FAC80C] rounded-full opacity-10 blur-3xl -z-10"></div>
+
+      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-14">
+        
+        {/* Text Section */}
+        <div className="max-w-xl text-center lg:text-left">
+          <span className="text-sm font-medium text-[#E98B07] uppercase tracking-wide">Conócenos</span>
+          <h2 className="text-4xl font-extrabold text-[#136245] mb-4 drop-shadow-md">
+            Sobre Nosotros
           </h2>
-
-          <p className="mb-4 text-lg leading-relaxed text-[#53270D]"> {/* Dark Brown for text */}
-            <span className="font-bold text-[#25793A]">Apícola Oro Dulce</span> nace del deseo de vivir en armonía con la naturaleza y ofrecer un alimento noble, lleno de vida. Enclavados en la precordillera del secano interior, en la comuna de Alhué, trabajamos con respeto por las abejas y por los tiempos de la tierra.
+          <p className="text-gray-700 mb-6 text-lg leading-relaxed">
+            Miel 100% natural, cosechada en Alhué. Apoyamos la conservación de las abejas y promovemos el consumo local, sin aditivos ni procesos industriales.
           </p>
-
-          <p className="mb-4 text-lg leading-relaxed text-[#53270D]"> {/* Dark Brown for text */}
-            Nuestro compromiso es simple pero profundo: cuidar a las abejas, proteger el entorno y ofrecer productos honestos y saludables.
-          </p>
-
-          <p className="text-lg leading-relaxed text-[#53270D]"> {/* Dark Brown for text */}
-            Creemos que cada frasco de miel cuenta una historia. Y la nuestra está hecha de trabajo, tradición y amor por lo que hacemos.
-          </p>
+          <button className="border border-[#136245] px-6 py-2 rounded-md text-sm font-semibold text-[#136245] hover:bg-[#136245] hover:text-white transition shadow-sm">
+            Contáctanos
+          </button>
         </div>
 
-        {/* Image Content */}
-        <div className="relative flex justify-center items-center lg:order-2">
-          <div className="w-full h-[400px] lg:w-[500px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl border-4 border-[#FAC80C] relative transform hover:scale-105 transition-transform duration-300"> {/* Honey color border */}
+        {/* Image Section */}
+        <div className="relative w-[260px] h-[260px] lg:w-[320px] lg:h-[320px]">
+          <div className="w-full h-full clip-hexagon overflow-hidden shadow-2xl border-4 border-[#fff3d0]">
             <img
-              src="/images/personmiel.jpeg" // Replace with your image path
-              alt="Familia Apícola"
-              className="object-cover w-full h-full rounded-xl"
+              src="/images/personmiel.jpeg"
+              alt="Imagen familiar"
+              width={300}
+              height={300}
+              className="object-cover w-full h-full"
             />
           </div>
-
-          {/* Decorative Shape */}
-          <div className="absolute top-[-60px] right-[-60px] bg-[#25793A] w-36 h-36 rounded-full blur-3xl opacity-30 z-0"></div> {/* Honey color */}
         </div>
       </div>
-
-      {/* Added Design: Separator */}
-      <div className="absolute bottom-[-50px] left-0 w-full h-24 bg-gradient-to-r from-[#FAC80C] to-[#25793A] rounded-b-3xl opacity-50"></div> {/* Honey Gradient */}
     </section>
   );
 };
 
-export default AboutUs;
+export default AboutSection;

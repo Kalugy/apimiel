@@ -11,6 +11,7 @@ import Description from '../components/Home/Description';
 import History from '../components/Home/History';
 import TerritorySection from '../components/Home/TerritorySection';
 import BlogSection from '../components/Home/BlogSection';
+import OurStorySection from '../components/Home/OurStorySection';
 
 
 
@@ -19,8 +20,11 @@ function HomeScreen() {
   return (
       <div>
         <Header/>
-        <About />
+        {/*<About />*/}
+        
         <History />
+        <OurStorySection />
+
         <Description />
         <ProductSection />
         

@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const CtaSection = () => {
   return (
-    <section className="bg-[#FAC80C] py-16 px-6 lg:px-20 text-white text-center">
+    <section className="bg-[#FFF8F2] py-16 px-6 lg:px-20 text-white text-center">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-4xl font-bold mb-4 text-[#0F0C0B]">
           ¿Listo para disfrutar de nuestra miel natural?

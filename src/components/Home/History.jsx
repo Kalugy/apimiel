@@ -1,49 +1,76 @@
 import React from "react";
+import { FaHandshake, FaSeedling, FaBoxOpen } from "react-icons/fa";
 
-const HistoryObjectives = () => {
+const AboutHoneySection = () => {
   return (
-    <section className="relative bg-[#F9F9F9] py-24 px-6 lg:px-32 text-[#0F0C0B]" id="history-objectives">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse gap-16 items-center">
-        {/* Left Side Content (on PC, this will appear on the right) */}
-        <div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#25793A] relative inline-block"> {/* Honey color for heading */}
-            Historia y Objetivos
-            <span className="absolute left-0 -bottom-2 w-16 h-1 bg-[#FAC80C] rounded-full"></span> {/* Honey color underline */}
-          </h2>
+    <section className="bg-[#FFF8F2] py-16 px-6 lg:px-20">
+      <div className="max-w-7xl mx-auto">
 
-          <h3 className="text-2xl font-semibold text-[#25793A] mb-4">Historia</h3> {/* Green for subheading */}
-          <p className="mb-6 text-lg leading-relaxed text-[#53270D]"> {/* Rich Brown for paragraph */}
-            <span className="font-semibold text-[#25793A]">Apícola Oro Dulce</span> nace como un emprendimiento familiar en la comuna de Alhué, inspirado en el amor por las abejas y la necesidad de generar un sustento digno y sostenible desde el campo chileno. Con esfuerzo y dedicación, fuimos aprendiendo el oficio apícola, desarrollando productos nobles y generando conciencia sobre la importancia de la polinización y el consumo local.
-          </p>
-
-          <h3 className="text-2xl font-semibold text-[#25793A] mb-4">Objetivos</h3> {/* Green for subheading */}
-          <ul className="list-disc pl-6 space-y-4 text-lg leading-relaxed text-[#53270D]"> {/* Rich Brown for list items */}
-            <li>Proteger y fortalecer la salud de nuestras abejas mediante buenas prácticas apícolas.</li>
-            <li>Desarrollar productos innovadores derivados de la miel, como propóleos, cera y polen.</li>
-            <li>Educar a la comunidad sobre la importancia de las abejas y el consumo responsable.</li>
-            <li>Contribuir al desarrollo económico de la comuna de Alhué mediante empleo local.</li>
-          </ul>
-        </div>
-
-        {/* Right Side Image with Hexagonal Shape (on PC, this will appear on the left) */}
-        <div className="relative flex justify-center items-center">
-          <div className="w-full h-[400px] lg:w-[500px] lg:h-[400px] overflow-hidden shadow-2xl border-4 border-[#25793A] relative transform hover:scale-105 transition-transform duration-300"> {/* Honey color border */}
-            <div className="hexagon w-full h-full relative">
-              <img
-                src="/images/mielcup.webp" // Replace with your bee honeycomb image
-                alt="Historia Apícola"
-                className="object-cover w-full h-full rounded-xl"
-              />
+        {/* Top Section */}
+        <div className="flex flex-col lg:flex-row items-center gap-10">
+          {/* Image */}
+          <div className="relative w-full lg:w-1/2">
+            <img
+              src="/images/miel60.jpg" // Reemplaza con tu ruta
+              alt="Frascos de miel"
+              className="rounded-lg shadow-xl"
+            />
+            <div className="absolute top-4 left-4 bg-white px-4 py-2 rounded shadow-md text-center">
+              <p className="text-xl font-bold text-[#D08C00]">24+</p>
+              <p className="text-sm text-gray-700">Años de experiencia</p>
             </div>
           </div>
 
+          {/* Text */}
+          <div className="w-full lg:w-1/2 space-y-4">
+            <h4 className="text-[#D08C00] uppercase tracking-wide font-medium">Sobre Nosotros</h4>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">
+              Te brindamos la mejor experiencia apícola
+            </h2>
+            <p className="text-gray-600">
+              Ofrecemos productos 100% naturales con un enfoque en calidad, tradición y sostenibilidad. Nuestra pasión por las abejas impulsa cada gota de miel que producimos.
+            </p>
+            <button className="bg-[#D08C00] text-white px-6 py-3 rounded-md hover:bg-[#bb7800] transition">
+              Descubre más
+            </button>
+          </div>
+        </div>
+
+        {/* Service Cards */}
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Card 1 */}
+          <div className="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition">
+            <FaHandshake className="text-[#D08C00] text-4xl mb-4 mx-auto" />
+            <h3 className="text-lg font-semibold text-gray-800">Apicultura Tradicional</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              Miel cultivada con técnicas respetuosas y sostenibles.
+            </p>
+            <button className="mt-4 text-[#D08C00] font-medium hover:underline">Conoce más</button>
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition">
+            <FaSeedling className="text-[#D08C00] text-4xl mb-4 mx-auto" />
+            <h3 className="text-lg font-semibold text-gray-800">Jardín de Abejas</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              Espacios dedicados a polinizadores y biodiversidad.
+            </p>
+            <button className="mt-4 text-[#D08C00] font-medium hover:underline">Conoce más</button>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-lg transition">
+            <FaBoxOpen className="text-[#D08C00] text-4xl mb-4 mx-auto" />
+            <h3 className="text-lg font-semibold text-gray-800">Productos Naturales</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              Amplia gama de miel, propóleo y derivados naturales.
+            </p>
+            <button className="mt-4 text-[#D08C00] font-medium hover:underline">Conoce más</button>
+          </div>
         </div>
       </div>
-
-      {/* Added Design: Separator */}
-      {/* <div className="absolute bottom-[-50px] left-0 w-full h-24 bg-gradient-to-r from-[#E52C35] to-[#FAC80C] rounded-b-3xl opacity-50"></div> */}
     </section>
   );
 };
 
-export default HistoryObjectives;
+export default AboutHoneySection;
