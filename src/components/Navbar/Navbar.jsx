@@ -25,12 +25,12 @@ const Navbar = () => {
     <nav
       className={`absolute top-0 left-0 w-full z-50 transition duration-300 bg-transparent text-white`}
     >
-      <div className="flex items-center justify-between px-4 py-1 lg:px-80">
+      <div className="flex items-center justify-between px-4 py-1 xl:px-80 ">
         {/* Logo */}
         <NavLink className="cursor-pointer" to="/" >
-          <div className="flex ml-9 align-middle items-center">
+          <div className="flex ml-1 md:ml-9 align-middle items-center">
             <img src="/images/logo.png" alt="Logo" className="h-12 " />
-            <h1 className={`text-2xl italic font-bold ml-2 `}>
+            <h1 className={`text-xs md:text-lg xl:text-2xl italic font-bold ml-2 `}>
               Apícola Oro Dulce
             </h1>
           </div>
@@ -71,7 +71,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed overflow-y-hidden top-0 left-0 w-full h-full transform transition-transform duration-500 ease-in-out ${
+        className={`fixed overflow-y-hidden top-0 left-0 w-screen h-full transform transition-transform duration-500 ease-in-out ${
           isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
         } bg-gray-600`}
       >

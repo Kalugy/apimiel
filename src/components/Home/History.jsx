@@ -37,8 +37,6 @@ const HistoryObjectives = () => {
             </div>
           </div>
 
-          {/* Decorative Shape */}
-          <div className="absolute top-[-60px] right-[-60px] bg-[#FAC80C] w-36 h-36 rounded-full blur-3xl opacity-30 z-0"></div> {/* Honey color */}
         </div>
       </div>
 

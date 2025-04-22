@@ -1,55 +1,56 @@
 import React from "react";
-import { FaInstagram, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram } from "react-icons/fa";
 
-const ContactSection = () => {
+const ContactUs = () => {
   return (
-    <section className="bg-[#F9F9F9] py-24 px-6 lg:px-32 text-[#0F0C0B]" id="contacto">
-      <h2 className="text-3xl font-bold text-center text-[#FAC80C] mb-6">
-        Contacto
-      </h2>
+    <section className="py-20 px-6 lg:px-24 bg-white text-[#2B2829]" id="contact">
+      <div className="max-w-7xl mx-auto">
+        {/* Title */}
+        <h2 className="text-4xl font-bold mb-6 font-serif">Contáctanos</h2>
+        <p className="text-sm text-gray-600 max-w-xl mb-12">
+          ¿Quieres comprar nuestra miel o saber más sobre nuestro trabajo? <br className="hidden md:block" />
+          ¡No dudes en ponerte en contacto con nosotros!
+        </p>
 
-      <p className="text-center max-w-3xl mx-auto text-[#53270D] mb-12 text-lg">
-        ¿Quieres comprar nuestra miel o saber más sobre nuestro trabajo? 
-        ¡No dudes en ponerte en contacto con nosotros!
-      </p>
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-        {/* Contact Info */}
-        <div className="text-center lg:text-left">
-          <h3 className="text-xl font-semibold text-[#25793A] mb-4">
-            Información de Contacto
-          </h3>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Left Side - Map and Location */}
           <div className="space-y-6">
+            <div className="overflow-hidden rounded-xl shadow-md w-full h-[260px]">
+              <iframe
+                title="Alhué, Chile Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26452.634841062063!2d-71.11349972983665!3d-34.02900683520943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96630d03dcea2f2b%3A0x96c4c35366c3e4a7!2sAlhue%2C%20Alhu%C3%A9%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses-419!2sco!4v1745266615732!5m2!1ses-419!2sco"
+                className="w-full h-full"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="text-2xl text-[#25793A]"><FaMapMarkerAlt /></div>
+              <div>
+                <p className="font-semibold">Ubicación</p>
+                <p className="text-sm text-gray-600">Comuna de Alhué, Región Metropolitana, Chile</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side - Contact Options */}
+          <div className="space-y-6 text-lg">
             <div className="flex items-center gap-4 justify-center lg:justify-start">
               <FaPhoneAlt className="text-[#25793A]" size={20} />
-              <p className="text-lg">+56 9 XXXX XXXX</p>
+              <p>+56 9 XXXX XXXX</p>
             </div>
             <div className="flex items-center gap-4 justify-center lg:justify-start">
               <FaEnvelope className="text-[#25793A]" size={20} />
-              <p className="text-lg">contacto@apicolaorodulce.cl</p>
+              <p>contacto@apicolaorodulce.cl</p>
             </div>
             <div className="flex items-center gap-4 justify-center lg:justify-start">
               <FaInstagram className="text-[#25793A]" size={20} />
-              <p className="text-lg">@apicolaorodulce</p>
+              <p>@apicolaorodulce</p>
             </div>
           </div>
-        </div>
-
-        {/* Google Map */}
-        <div className="relative w-full h-[300px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl border-2 border-[#25793A]">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26452.634841062063!2d-71.11349972983665!3d-34.02900683520943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96630d03dcea2f2b%3A0x96c4c35366c3e4a7!2sAlhue%2C%20Alhu%C3%A9%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses-419!2sco!4v1745266615732!5m2!1ses-419!2sco"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            title="Ubicación de Apícola Oro Dulce"
-          ></iframe>
         </div>
       </div>
     </section>
   );
 };
 
-export default ContactSection;
+export default ContactUs;

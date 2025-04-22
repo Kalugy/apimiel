@@ -3,7 +3,7 @@ import React from "react";
 const BlogSection = () => {
   return (
     <section className="bg-[#F9F9F9] py-24 px-6 lg:px-32 text-[#0F0C0B]" id="blog">
-      <h2 className="text-3xl font-bold text-center text-black mb-6">
+      <h2 className="text-3xl font-extrabold text-center text-[#25793A] mb-6">
         Blog / Noticias / Educación Apícola
       </h2>
 
@@ -13,7 +13,14 @@ const BlogSection = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {/* First Blog Item */}
-        <div className="rounded-xl shadow-xl border border-[#FAC80C] p-8 bg-white hover:shadow-2xl transition duration-300">
+        <div className="rounded-xl shadow-xl border border-[#25793A] p-8 bg-white hover:shadow-2xl transition duration-300">
+          <div className="w-full h-[200px] mb-4 rounded-xl overflow-hidden">
+            <img
+              src="/images/miel57.jpg" // Replace with your image path
+              alt="¿Por qué las abejas están desapareciendo?"
+              className="object-cover w-full h-full"
+            />
+          </div>
           <h3 className="text-xl font-semibold text-[#0F0C0B] mb-4">
             ¿Por qué las abejas están desapareciendo?
           </h3>
@@ -29,7 +36,14 @@ const BlogSection = () => {
         </div>
 
         {/* Second Blog Item */}
-        <div className="rounded-xl shadow-xl border border-[#FAC80C] p-8 bg-white hover:shadow-2xl transition duration-300">
+        <div className="rounded-xl shadow-xl border border-[#25793A] p-8 bg-white hover:shadow-2xl transition duration-300">
+          <div className="w-full h-[200px] mb-4 rounded-xl overflow-hidden">
+            <img
+              src="/images/miel56.jpg" // Replace with your image path
+              alt="Cómo identificar una miel auténtica"
+              className="object-cover w-full h-full"
+            />
+          </div>
           <h3 className="text-xl font-semibold text-[#0F0C0B] mb-4">
             Cómo identificar una miel auténtica
           </h3>
@@ -45,28 +59,19 @@ const BlogSection = () => {
         </div>
 
         {/* Third Blog Item */}
-        <div className="rounded-xl shadow-xl border border-[#FAC80C] p-8 bg-white hover:shadow-2xl transition duration-300">
+        <div className="rounded-xl shadow-xl border border-[#25793A] p-8 bg-white hover:shadow-2xl transition duration-300">
+          <div className="w-full h-[200px] mb-4 rounded-xl overflow-hidden">
+            <img
+              src="/images/miel55.jpg" // Replace with your image path
+              alt="Beneficios de consumir productos apícolas locales"
+              className="object-cover w-full h-full"
+            />
+          </div>
           <h3 className="text-xl font-semibold text-[#0F0C0B] mb-4">
             Beneficios de consumir productos apícolas locales
           </h3>
           <p className="text-[#53270D] mb-4">
             Descubre cómo el consumo de miel, polen, cera y propóleos locales puede beneficiar tu salud y apoyar el desarrollo de las comunidades rurales.
-          </p>
-          <a
-            href="#"
-            className="text-[#25793A] font-semibold hover:text-[#FAC80C] transition"
-          >
-            Leer más
-          </a>
-        </div>
-
-        {/* Fourth Blog Item */}
-        <div className="rounded-xl shadow-xl border border-[#FAC80C] p-8 bg-white hover:shadow-2xl transition duration-300">
-          <h3 className="text-xl font-semibold text-[#0F0C0B] mb-4">
-            El rol del apicultor en la conservación del medio ambiente
-          </h3>
-          <p className="text-[#53270D] mb-4">
-            Los apicultores juegan un papel clave en la preservación de la biodiversidad y el equilibrio ecológico. Descubre cómo contribuyen a la salud de nuestros ecosistemas.
           </p>
           <a
             href="#"

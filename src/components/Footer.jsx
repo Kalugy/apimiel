@@ -1,140 +1,73 @@
 import React from "react";
-import { FaInstagram, FaPhoneAlt, FaEnvelope, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
-
-const contactInfo = [
-  {
-    icon: <FaEnvelope className="text-[#FAC80C] text-2xl" />,
-    title: "Email",
-    value: "contacto@apicolaorodulce.cl",
-  },
-  {
-    icon: <FaPhoneAlt className="text-[#FAC80C] text-2xl" />,
-    title: "Teléfono",
-    value: "+56 9 XXXX XXXX",
-  },
-  {
-    icon: <FaWhatsapp className="text-[#FAC80C] text-2xl" />,
-    title: "WhatsApp",
-    value: "+56 9 XXXX XXXX",
-  },
-  {
-    icon: <FaMapMarkerAlt className="text-[#FAC80C] text-2xl" />,
-    title: "Ubicación",
-    value: "Alhué, Región Metropolitana, Chile"
-  },
-];
+import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
-  const quickLinks = [
-    { label: "Inicio", href: "/" },
-    { label: "Nosotros", href: "#about" },
-    { label: "Productos", href: "#productos" },
-    { label: "Contacto", href: "#contacto" }
-  ];
-
-  const socialMediaLinks = [
-    { href: "https://www.instagram.com/apicolaorodulce/", icon: FaInstagram, label: "Instagram" },
-  ];
-
   return (
-    <footer className="bg-[#0F0C0B] text-white py-10 px-6 md:px-20">
-      <div className="flex flex-col md:flex-row gap-10 md:gap-20">
+    <footer className="bg-[#FFF8E1] text-[#2B2829] py-16 px-6 lg:px-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        {/* Logo & Descripción + Redes */}
         <div>
-          <div className="flex items-center gap-3 mb-4">
-            <img src="/images/logo.png" alt="Apícola Oro Dulce Logo" className="h-8 rotate-[10deg]" />
-            <h4 className="text-2xl font-bold text-[#FAC80C]">Apícola Oro Dulce</h4>
+          <div className="mb-4">
+            <img src="/images/logo.png" alt="Apícola Oro Dulce Logo" width={80} height={80} />
           </div>
-          <p className="text-sm text-[#B88335] font-semibold max-w-xs">
-            Miel 100% natural, cosechada en la región de Alhué, sin aditivos. Apoya la conservación de las abejas y consume productos locales.
+          <p className="text-sm text-gray-700 mb-4">
+            Miel 100% natural, cosechada en la región de Alhué, sin aditivos.
+            <br />
+            Apoya la conservación de las abejas y consume productos locales.
           </p>
-          <div>
-            <h4 className="text-lg font-semibold mb-3 text-[#FAC80C] pt-5">Síguenos</h4>
-            <div className="flex gap-4">
-              {socialMediaLinks.map((social, idx) => {
-                return (
-                  <a
-                    key={idx}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.label}
-                    className="hover:text-[#E52C35] text-white transition text-2xl"
-                  >
-                    <social.icon />
-                  </a>
-                );
-              })}
-            </div>
+          <div className="flex gap-4 mt-4">
+            <a href="https://instagram.com/apicolaorodulce" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-[#E98B07] hover:text-[#cc7a04]" size={24} />
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF className="text-[#E98B07] hover:text-[#cc7a04]" size={24} />
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <FaYoutube className="text-[#E98B07] hover:text-[#cc7a04]" size={24} />
+            </a>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-20">
-          <div>
-            <h4 className="text-lg font-semibold mb-3 text-[#FAC80C]">Contacto</h4>
-            <ul className="space-y-4">
-              {contactInfo.map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <div>
-                    <p className="text-sm font-medium text-[#FAC80C]">{item.title}:</p>
-                    {item.title === "Email" ? (
-                      <a href={`mailto:${item.value}`} className="text-sm hover:text-[#FAC80C] transition">
-                        {item.value}
-                      </a>
-                    ) : item.title === "WhatsApp" ? (
-                      <a
-                        href="https://wa.link/q8rlm1"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm hover:text-[#FAC80C] transition"
-                      >
-                        {item.value}
-                      </a>
-                    ) : item.title === "Teléfono" ? (
-                      <a
-                        href={`tel:${item.value.replace(/\s/g, "")}`}
-                        className="text-sm hover:text-[#FAC80C] transition"
-                      >
-                        {item.value}
-                      </a>
-                    ) : (
-                      <p className="text-sm">{item.value}</p>
-                    )}
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* Nosotros */}
+        <div>
+          <h3 className="font-semibold text-lg mb-4">Nosotros</h3>
+          <ul className="space-y-2 text-sm text-gray-700">
+            <li><a href="#about" className="hover:text-[#E98B07]">¿Quiénes somos?</a></li>
+            <li><a href="#productos" className="hover:text-[#E98B07]">Nuestros productos</a></li>
+            <li><a href="#contacto" className="hover:text-[#E98B07]">Contacto</a></li>
+          </ul>
+        </div>
 
-          <div>
-            <h4 className="text-lg font-semibold mb-3 text-[#FAC80C]">Empresa</h4>
-            <ul className="space-y-2">
-              {quickLinks.map(link => (
-                <li key={link.href}>
-                  {link.href.startsWith("/") ? (
-                    <a
-                      href={link.href}
-                      className="hover:text-[#FAC80C] transition"
-                    >
-                      {link.label}
-                    </a>
-                  ) : (
-                    <a
-                      href={link.href}
-                      className="hover:text-[#FAC80C] transition"
-                    >
-                      {link.label}
-                    </a>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-          
+        {/* Contacto */}
+        <div>
+          <h3 className="font-semibold text-lg mb-4">Contacto</h3>
+          <ul className="space-y-2 text-sm text-gray-700">
+            <li><a href="mailto:contacto@apicolaorodulce.cl" className="hover:text-[#E98B07]">contacto@apicolaorodulce.cl</a></li>
+            <li><a href="tel:+569XXXXXXX" className="hover:text-[#E98B07]">+56 9 XXXX XXXX</a></li>
+            <li><a href="https://instagram.com/apicolaorodulce" target="_blank" className="hover:text-[#E98B07]">@apicolaorodulce</a></li>
+          </ul>
+        </div>
+
+        {/* Ubicación */}
+        <div>
+          <h3 className="font-semibold text-lg mb-4">Ubicación</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26452.634841062063!2d-71.11349972983665!3d-34.02900683520943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96630d03dcea2f2b%3A0x96c4c35366c3e4a7!2sAlhue%2C%20Alhu%C3%A9%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses-419!2sco!4v1745266615732!5m2!1ses-419!2sco"
+            width="100%"
+            height="120"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="rounded-md"
+          ></iframe>
         </div>
       </div>
 
-      <div className="text-center mt-10 text-sm text-[#B88335]">
-        &copy; {new Date().getFullYear()} Apícola Oro Dulce. Todos los derechos reservados.
+      {/* Bottom Bar */}
+      <div className="mt-10 text-center text-sm text-gray-500 border-t border-gray-200 pt-6">
+        © {new Date().getFullYear()} Apícola Oro Dulce – Hecho con 🐝 en Alhué
       </div>
     </footer>
   );

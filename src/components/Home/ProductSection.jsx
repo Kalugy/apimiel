@@ -59,21 +59,21 @@ const ProductSection = () => {
 
       <Swiper
         modules={[Navigation, Pagination]}
-        spaceBetween={20}
+        spaceBetween={2}
         slidesPerView={1}
         breakpoints={{
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          1424: { slidesPerView: 3 },
         }}
         navigation
         pagination={{ clickable: true }}
-        className="pb-28"
+        className="lg:pb-28"
       >
         {products.map((product) => (
           <SwiperSlide key={product.name}>
             <div className="rounded-3xl shadow-xl border border-[#FAC80C]/20 p-8 m-8 text-center h-full hover:shadow-2xl transition duration-300 flex flex-col items-center">
               {/* Image */}
-              <div className="w-full h-[250px] md:h-[350px] mb-4 rounded-xl overflow-hidden border-4 border-[#FAC80C] bg-white shadow-md">
+              <div className="w-full h-[150px] md:h-[250px] mb-4 rounded-xl overflow-hidden border border-[#FAC80C] bg-white shadow-md">
                 <img
                   src={product.image}
                   alt={product.name}

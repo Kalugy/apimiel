@@ -13,11 +13,11 @@ const HomeHero = () => {
       <div className="relative z-10 flex flex-col-reverse md:flex-row items-center justify-center max-w-6xl mx-auto p-8 text-white">
         {/* Text content */}
         <div className="max-w-lg text-center md:text-left space-y-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-[#FAC80C] drop-shadow-lg mb-4">
+          <h1 className="text-md xl:text-6xl font-extrabold text-[#FAC80C] drop-shadow-lg mb-4">
             Miel con historia, sabor con propósito.
           </h1>
 
-          <p className="text-md text-center md:text-lg leading-relaxed text-white/98 font-medium opacity-90">
+          <p className="text-md text-center lg:text-lg leading-relaxed text-white/98 font-medium opacity-90">
             Desde la comuna de Alhué, Región Metropolitana, producimos miel pura y subproductos apícolas de forma consciente y sostenible. Somos una familia apícola que cree en el poder de las abejas para regenerar el territorio y alimentar con amor.
           </p>
 
