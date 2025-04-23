@@ -9,7 +9,7 @@ const TerritorySection = () => {
       <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="relative z-10 text-center max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#FAC80C]">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#D08C00]">
           Territorio / Nuestro Entorno
         </h2>
         <p className="text-lg md:text-xl leading-relaxed mb-8 opacity-90">

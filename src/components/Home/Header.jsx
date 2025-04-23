@@ -6,27 +6,27 @@ const ContactUsSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         {/* Left Side Content */}
         <div className="text-black text-center lg:text-left space-y-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold">Miel con historia</h1>
+          <h1 className="text-4xl md:text-6xl text-left font-extrabold">Miel con historia</h1>
           <h2 className="text-xl md:text-3xl font-medium mb-4">
-            Desde la comuna de Alhué, Región Metropolitana, producimos miel pura y subproductos apícolas de forma consciente y sostenible.
           </h2>
           <p className="text-lg md:text-xl leading-relaxed mb-6">
-            Somos una familia apícola que cree en el poder de las abejas para regenerar el territorio y alimentar con amor.
-            Creemos que la miel no solo es un producto, sino un testimonio de trabajo y compromiso con la naturaleza y la comunidad.
+            Desde la comuna de Alhué, producimos miel pura y subproductos apícolas de forma consciente y sostenible.
+
           </p>
           <div className="flex gap-4 justify-center lg:justify-start">
             <a
-              href="#productos"
-              className="bg-white text-[#25793A] hover:bg-[#0F0C0B] px-6 py-3 rounded-full font-semibold transition duration-300"
+              href="#about"
+              className="bg-[#D08C00] text-white px-6 py-3 rounded-md hover:bg-[#bb7800] transition shadow-sm"
             >
-              Explora nuestros productos
+              Sobre nosotros
             </a>
             <a
-              href="#about"
-              className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-[#25793A] px-6 py-3 rounded-full font-semibold transition duration-300"
+              href="#productos"
+              className="bg-[#D08C00] text-white px-6 py-3 rounded-md hover:bg-[#bb7800] transition hover:bg-[#136245] shadow-sm"
             >
-              Conoce más sobre nosotros
+              Nuestros productos
             </a>
+            
           </div>
         </div>
 

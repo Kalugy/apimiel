@@ -1,5 +1,4 @@
 import Header from '../components/Home/Header';
-import PlatesCarousel from '../components/Home/PlatesCarousel';
 import Services from '../components/Home/Services';
 import FAQs from "../components/FAQ/FAQ";
 //import Section from '../components/Section';
@@ -30,9 +29,10 @@ function HomeScreen() {
         
         <CallToActionSection />
 
-        <TerritorySection />
         
         <BlogSection />
+
+        <TerritorySection />
         <Contact />
         
         {/*<ProductSection />

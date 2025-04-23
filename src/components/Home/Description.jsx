@@ -5,7 +5,7 @@ const MissionVisionCleanSection = () => {
   return (
     <section className="bg-[#FFF8F2] py-20 px-6 lg:px-24">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-12 text-gray-900">Nuestra Misión y Visión</h2>
+        <h2 className="text-4xl text-[#D08C00] font-extrabold mb-12 ">Nuestra Misión y Visión</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Misión */}
