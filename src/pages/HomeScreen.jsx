@@ -12,6 +12,7 @@ import TerritorySection from '../components/Home/TerritorySection';
 import BlogSection from '../components/Home/BlogSection';
 import OurStorySection from '../components/Home/OurStorySection';
 
+import TestimonialCard from '../components/Home/TestimonialCard';
 
 
 function HomeScreen() {
@@ -33,6 +34,7 @@ function HomeScreen() {
         <BlogSection />
 
         <TerritorySection />
+        <TestimonialCard />
         <Contact />
         
         {/*<ProductSection />
