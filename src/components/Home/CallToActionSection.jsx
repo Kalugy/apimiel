@@ -12,7 +12,7 @@ const CtaSection = () => {
           Aprovecha nuestras mieles 100% naturales, cosechadas con amor en la región de Alhué. ¡Haz tu compra ahora y recibe tu pedido en la puerta de tu casa!
         </p>
         <a
-          href="https://web.whatsapp.com/" // Replace with your specific WhatsApp link
+          href="https://wa.link/ydj43a" // Replace with your specific WhatsApp link
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-[#0F0C0B] font-semibold text-lg shadow-lg hover:bg-gray-200 transition"
