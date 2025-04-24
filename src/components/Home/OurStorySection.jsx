@@ -18,7 +18,7 @@ const OurStorySection = () => {
 
           <div className="w-full h-full clip-hexagon overflow-hidden ">
             <img
-              src="/images/personmiel.jpeg" // Usa tu segunda imagen aquí
+              src="/images/Honeybee.jpg" // Usa tu segunda imagen aquí
               alt="Historia Apícola"
               className="object-cover w-full h-full"
             />

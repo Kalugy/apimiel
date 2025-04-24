@@ -6,11 +6,12 @@ const ContactUsSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         {/* Left Side Content */}
         <div className="text-black text-center lg:text-left space-y-6">
-          <h1 className="text-4xl md:text-6xl text-left font-extrabold">Miel con historia</h1>
+          <h1 className="text-4xl md:text-6xl text-left font-extrabold">Miel de Alhué!</h1>
           <h2 className="text-xl md:text-3xl font-medium mb-4">
+            Reconocida en el 2021 con sello de origen e identificación geográfica.
           </h2>
           <p className="text-lg md:text-xl leading-relaxed mb-6">
-            Desde la comuna de Alhué, producimos miel pura y subproductos apícolas de forma consciente y sostenible.
+            Es la primera y única en Chile en recibir esta distinción . Esto significa que cada cucharada es auténtica al 100%, llevando consigo las cualidades particulares de su lugar de origen.
 
           </p>
           <div className="flex gap-4 justify-center lg:justify-start">

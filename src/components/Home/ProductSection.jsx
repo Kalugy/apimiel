@@ -1,84 +1,44 @@
 import React, { useState } from "react";
 
-const tabs = ["Best Sellers", "New Arrivals", "Featured", "Most Wanted"];
+const tabs = ["Mas Vendidos", "Nuevos", "Destacados", "Más Solicitados"];
 
 const products = [
   {
-    name: "Miel de Pradera Natural",
+    name: "Cajas de Sachet Miel Natural",
     description:
-      "Cosechada de flores silvestres de la zona de Alhué, sin ningún tipo de aditivos. Sabor auténtico y textura cremosa.",
+      "Envase con 30 sachet de 10 gramos de miel 100% multifloral. Duración indefinida.",
     image: "/images/miel1.jpeg",
     presentation: "500g / 1kg",
     price: "15.000",
     salePrice: "10000",
-    category: "Best Sellers",
+    category: "Mas Vendidos",
     isOnSale: true,
   },
   {
-    name: "Miel Multifloral de Temporada",
+    name: "Sachets de Miel con Limón Natural",
     description:
-      "Miel que refleja la biodiversidad del año. Cada cosecha tiene un aroma y color único.",
+      "Alivia la tos y el dolor de garganta con miel y limón: una mezcla natural con propiedades antibacterianas y vitamina C para combatir resfriados y gripe",
     image: "/images/miel1.jpeg",
     presentation: "500g / 1kg",
     price: "20.000",
     salePrice: "18.000",
-    category: "Best Sellers",
+    category: "Mas Vendidos",
   },
   {
-    name: "Propóleos Natural",
+    name: "Miel con Sabor a Frutilla Natural",
     description:
-      "Extracto natural con propiedades antibacterianas y antivirales, ideal para reforzar el sistema inmune.",
+      "La preferida por los niños y jóvenes por su agradable sabor.",
     image: "/images/miel1.jpeg",
     presentation: "Frasco 30g",
     price: "18.000",
     salePrice: "8.000",
-    category: "Best Sellers",
-  },
-  {
-    name: "Cera de Abeja Pura",
-    description:
-      "Usada para cosmética, velas y remedios naturales. Extraída con cuidado del panal.",
-    image: "/images/miel1.jpeg",
-    presentation: "100g",
-    price: "15.000",
-    salePrice: "8.000",
-    category: "Best Sellers",
-  },
-  {
-    name: "Miel Multifloral de Temporada",
-    description:
-      "Miel que refleja la biodiversidad del año. Cada cosecha tiene un aroma y color único.",
-    image: "/images/miel1.jpeg",
-    presentation: "500g / 1kg",
-    price: "20.000",
-    salePrice: "18.000",
-    category: "New Arrivals",
-  },
-  {
-    name: "Propóleos Natural",
-    description:
-      "Extracto natural con propiedades antibacterianas y antivirales, ideal para reforzar el sistema inmune.",
-    image: "/images/miel1.jpeg",
-    presentation: "Frasco 30g",
-    price: "28.000",
-    salePrice: "18.000",
-    category: "Featured",
-  },
-  {
-    name: "Cera de Abeja Pura",
-    description:
-      "Usada para cosmética, velas y remedios naturales. Extraída con cuidado del panal.",
-    image: "/images/miel1.jpeg",
-    presentation: "100g",
-    price: "25.000",
-    salePrice: "18.000",
-    category: "Most Wanted",
+    category: "Mas Vendidos",
   },
 ];
 
 
 const LatestProductsSection = () => {
-  const [activeTab, setActiveTab] = useState("Best Sellers");
+  const [activeTab, setActiveTab] = useState("Mas Vendidos");
 
   return (
     <section className="py-16 px-4 text-center bg-white">
@@ -130,7 +90,7 @@ const LatestProductsSection = () => {
               <p className="text-sm text-gray-500 italic mb-1">{product.presentation}</p>
               {/*<p className="text-[#D08C00] font-semibold">{product.price}</p>*/}
               {/* Price */}
-              <div className="mt-2 text-sm">
+              {/*<div className="mt-2 text-sm">
                 {product.salePrice ? (
                   <>
                     <span className="text-gray-400 line-through mr-2">${product.price}</span>
@@ -139,7 +99,7 @@ const LatestProductsSection = () => {
                 ) : (
                   <span className="text-[#D08C00] font-semibold">${product.price}</span>
                 )}
-              </div>
+              </div>*/}
             </div>
         ))}
       </div>

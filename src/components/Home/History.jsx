@@ -11,7 +11,7 @@ const AboutHoneySection = () => {
           {/* Image */}
           <div className="relative w-full lg:w-1/2">
             <img
-              src="/images/miel60.jpg" // Reemplaza con tu ruta
+              src="/images/honey1.jpg" // Reemplaza con tu ruta
               alt="Frascos de miel"
               className="rounded-lg shadow-xl"
             />
@@ -23,13 +23,13 @@ const AboutHoneySection = () => {
 
           {/* Text */}
           <div className="w-full lg:w-1/2 space-y-4">
-            <h4 className="text-[#D08C00] uppercase tracking-wide font-medium">Sobre Nosotros</h4>
+            <h4 className="text-[#D08C00] uppercase tracking-wide font-medium">Nuestra Miel
+            </h4>
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">
-              Te brindamos la mejor experiencia apícola
+              Te brindamos los mejores productos
             </h2>
             <p className="text-gray-600">
-              Ofrecemos productos 100% naturales con un enfoque en calidad, tradición y sostenibilidad. Nuestra pasión por las abejas impulsa cada gota de miel que producimos.
-            </p>
+              La Miel de Alhué captura la esencia de los Altos de Cantillana con una mezcla única de flores nativas chilenas. Su color ámbar y sabor natural reflejan la riqueza de nuestra flora endémica.            </p>
             <button className="bg-[#D08C00] text-white px-6 py-3 rounded-md hover:bg-[#bb7800] transition">
               Descubre más
             </button>
