@@ -36,7 +36,7 @@ const ContactUs = () => {
           <div className="space-y-6 text-lg">
             <div className="flex items-center gap-4 justify-center lg:justify-start">
               <FaPhoneAlt className="text-[#25793A]" size={20} />
-              <p>+56 9 XXXX XXXX</p>
+              <p>+56 9 9729 0718</p>
             </div>
             <div className="flex items-center gap-4 justify-center lg:justify-start">
               <FaEnvelope className="text-[#25793A]" size={20} />

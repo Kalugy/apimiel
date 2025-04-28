@@ -44,7 +44,7 @@ const Footer = () => {
           <h3 className="font-semibold text-lg mb-4">Contacto</h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li><a href="mailto:contacto@apicolaorodulce.cl" className="hover:text-[#E98B07]">contacto@apicolaorodulce.cl</a></li>
-            <li><a href="tel:+569XXXXXXX" className="hover:text-[#E98B07]">+56 9 XXXX XXXX</a></li>
+            <li><a href="tel:+569XXXXXXX" className="hover:text-[#E98B07]">+56 9 9729 0718</a></li>
             <li><a href="https://instagram.com/apicolaorodulce" target="_blank" className="hover:text-[#E98B07]">@apicolaorodulce</a></li>
           </ul>
         </div>
