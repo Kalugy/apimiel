@@ -31,7 +31,7 @@ const OurStorySection = () => {
             Nuestra Historia
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed">
-            Todo comenzó como una iniciativa familiar en Alhué, impulsada por el amor a las abejas y la naturaleza. Con los años, nos hemos consolidado como una apícola comprometida con la sostenibilidad, el respeto al ecosistema y la producción responsable de miel.
+          Apícola tuvo sus orígenes en Alhué, motivada por un compromiso genuino con la preservación de las abejas y el equilibrio del entorno natural. A lo largo del tiempo, nos hemos consolidado como una empresa dedicada a la apicultura sostenible, con un enfoque en la protección del ecosistema y una producción de miel ética y responsable.
           </p>
         </div>
       </div>

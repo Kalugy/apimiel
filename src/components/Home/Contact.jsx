@@ -44,7 +44,7 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center gap-4 justify-center lg:justify-start">
               <FaInstagram className="text-[#25793A]" size={20} />
-              <p>@apicolaorodulce</p>
+              <p>@apicolaorodulcechile</p>
             </div>
           </div>
         </div>

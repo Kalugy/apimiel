@@ -17,7 +17,7 @@ const Footer = () => {
             Apoya la conservación de las abejas y consume productos locales.
           </p>
           <div className="flex gap-4 mt-4">
-            <a href="https://instagram.com/apicolaorodulce" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/apicolaorodulcechile/" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-[#E98B07] hover:text-[#cc7a04]" size={24} />
             </a>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -45,7 +45,7 @@ const Footer = () => {
           <ul className="space-y-2 text-sm text-gray-700">
             <li><a href="mailto:contacto@apicolaorodulce.cl" className="hover:text-[#E98B07]">contacto@apicolaorodulce.cl</a></li>
             <li><a href="tel:+569XXXXXXX" className="hover:text-[#E98B07]">+56 9 9729 0718</a></li>
-            <li><a href="https://instagram.com/apicolaorodulce" target="_blank" className="hover:text-[#E98B07]">@apicolaorodulce</a></li>
+            <li><a href="https://www.instagram.com/apicolaorodulcechile/ " target="_blank" className="hover:text-[#E98B07]">@apicolaorodulcechile </a></li>
           </ul>
         </div>
 
