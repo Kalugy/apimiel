@@ -34,7 +34,7 @@ const ContactUsSection = () => {
         {/* Right Side Image */}
         <div className="flex justify-center items-center w-full lg:w-[90%]">
           <img
-            src="/images/home.png" // Replace with your image path
+            src="/images/packages2.jpeg" // Replace with your image path
             alt="Illustration of honey production"
             className="w-full h-auto rounded-lg"
           />

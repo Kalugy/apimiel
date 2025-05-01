@@ -1,44 +1,75 @@
 import React, { useState } from "react";
 
-const tabs = ["Mas Vendidos", "Nuevos", "Destacados", "Más Solicitados"];
+const tabs = ["Cajas", "Frascos"];
 
 const products = [
   {
     name: "Cajas de Sachet Miel Natural",
     description:
       "Envase con 30 sachet de 10 gramos de miel 100% multifloral. Duración indefinida.",
-    image: "/images/miel1.jpeg",
-    presentation: "500g / 1kg",
+    image: "/images/p3.jpeg",
+    presentation: "caja 30g",
     price: "15.000",
     salePrice: "10000",
-    category: "Mas Vendidos",
+    category: "Cajas",
     isOnSale: true,
   },
   {
     name: "Sachets de Miel con Limón Natural",
     description:
       "Alivia la tos y el dolor de garganta con miel y limón: una mezcla natural con propiedades antibacterianas y vitamina C para combatir resfriados y gripe",
-    image: "/images/miel1.jpeg",
-    presentation: "500g / 1kg",
+    image: "/images/p2.jpeg",
+    presentation: "caja 30g",
     price: "20.000",
     salePrice: "18.000",
-    category: "Mas Vendidos",
+    category: "Cajas",
   },
   {
     name: "Miel con Sabor a Frutilla Natural",
     description:
       "La preferida por los niños y jóvenes por su agradable sabor.",
+    image: "/images/p1.jpeg",
+    presentation: "caja 30g",
+    price: "18.000",
+    salePrice: "8.000",
+    category: "Cajas",
+  },
+  {
+    name: "Miel con Sabor a Frutilla Natural",
+    description:
+      "La preferida por los niños y jóvenes por su agradable sabor.",
+    image: "/images/bottle2.jpeg",
+    presentation: "Frasco 30g",
+    price: "18.000",
+    salePrice: "8.000",
+    category: "Frascos",
+  },
+  {
+    name: "Miel con Limon",
+    description:
+      "Miel 100% natural con limón",
+    image: "/images/bottle1.jpeg",
+    presentation: "Frasco 30g",
+    price: "18.000",
+    salePrice: "8.000",
+    category: "Frascos",
+  },
+  {
+    name: "Miel Natural",
+    description:
+      "Miel 100% natural",
     image: "/images/miel1.jpeg",
     presentation: "Frasco 30g",
     price: "18.000",
     salePrice: "8.000",
-    category: "Mas Vendidos",
+    category: "Frascos",
   },
+
 ];
 
 
 const LatestProductsSection = () => {
-  const [activeTab, setActiveTab] = useState("Mas Vendidos");
+  const [activeTab, setActiveTab] = useState("Cajas");
 
   return (
     <section className="py-16 px-4 text-center bg-white">

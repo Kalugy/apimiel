@@ -11,7 +11,7 @@ const AboutHoneySection = () => {
           {/* Image */}
           <div className="relative w-full lg:w-1/2">
             <img
-              src="/images/honey1.jpg" // Reemplaza con tu ruta
+              src="/images/packages.jpeg" // Reemplaza con tu ruta
               alt="Frascos de miel"
               className="rounded-lg shadow-xl"
             />
